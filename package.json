@@ -4,7 +4,7 @@
   "description": "A fancy JS boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha tests/**/*.spec.js",
+    "test": "./node_modules/.bin/mocha --compilers js:babel-register tests/**/*.spec.js",
     "lint": "./node_modules/.bin/eslint --env mocha .",
     "precommit": "npm run lint && npm test"
   },
@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/dayanyrec/fancy-boilerplate#readme",
   "devDependencies": {
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.26.0",
     "chai": "^4.1.1",
     "eslint": "^4.5.0",
     "eslint-config-airbnb-base": "^11.3.2",

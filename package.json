@@ -4,9 +4,9 @@
   "description": "A fancy JS boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "./node_modules/.bin/eslint .",
-    "precommit": "npm run lint"
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js",
+    "lint": "./node_modules/.bin/eslint --env mocha .",
+    "precommit": "npm run lint && npm test"
   },
   "repository": {
     "type": "git",
@@ -24,9 +24,11 @@
   },
   "homepage": "https://github.com/dayanyrec/fancy-boilerplate#readme",
   "devDependencies": {
+    "chai": "^4.1.1",
     "eslint": "^4.5.0",
     "eslint-config-airbnb-base": "^11.3.2",
     "eslint-plugin-import": "^2.7.0",
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "mocha": "^3.5.0"
   }
 }

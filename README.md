@@ -37,6 +37,8 @@ npm run lint
 - [Babel](https://babeljs.io/)
 - [nyc](https://github.com/istanbuljs/nyc)
 
+If you need a mock, use [Sinon](http://sinonjs.org/).
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.

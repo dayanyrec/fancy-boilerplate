@@ -1,5 +1,7 @@
 # Fancy Boilerplate
 
+[![Build Status](https://travis-ci.org/dayanyrec/fancy-boilerplate.svg?branch=master)](https://travis-ci.org/dayanyrec/fancy-boilerplate)
+
 A fancy boilerplate to start a JS project using fancy tools
 
 ## Getting Started

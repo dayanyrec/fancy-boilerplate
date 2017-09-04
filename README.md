@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/dayanyrec/fancy-boilerplate.svg?branch=master)](https://travis-ci.org/dayanyrec/fancy-boilerplate)
 
+[![Coverage Status](https://coveralls.io/repos/github/dayanyrec/fancy-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dayanyrec/fancy-boilerplate?branch=master)
+
 A fancy boilerplate to start a JS project using fancy tools
 
 ## Getting Started

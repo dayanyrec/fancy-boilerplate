@@ -38,6 +38,7 @@ npm run lint
 - [Chai](http://chaijs.com/)
 - [Babel](https://babeljs.io/)
 - [nyc](https://github.com/istanbuljs/nyc)
+- [Coveralls](https://coveralls.io/)
 
 If you need a mock, use [Sinon](http://sinonjs.org/).
 

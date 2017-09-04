@@ -6,6 +6,7 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha --compilers js:babel-register tests/**/*.spec.js",
     "test:coverage": "nyc npm test",
+    "coveralls": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls",
     "lint": "./node_modules/.bin/eslint --env mocha .",
     "precommit": "npm run lint && npm run test:coverage"
   },
@@ -13,8 +14,13 @@
     "check-coverage": true,
     "functions": 80,
     "lines": 80,
-    "reporter": ["text", "html"],
-    "exclude": ["tests/**"]
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "exclude": [
+      "tests/**"
+    ]
   },
   "repository": {
     "type": "git",
@@ -35,6 +41,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-register": "^6.26.0",
     "chai": "^4.1.1",
+    "coveralls": "^2.13.1",
     "eslint": "^4.5.0",
     "eslint-config-airbnb-base": "^11.3.2",
     "eslint-plugin-import": "^2.7.0",

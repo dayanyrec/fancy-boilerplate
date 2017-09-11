@@ -41,6 +41,7 @@ npm run lint
 - [Babel](https://babeljs.io/)
 - [nyc](https://github.com/istanbuljs/nyc)
 - [Coveralls](https://coveralls.io/)
+- [webpack](https://webpack.js.org/)
 
 If you need a mock, use [Sinon](http://sinonjs.org/).
 

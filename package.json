@@ -4,6 +4,7 @@
   "description": "A fancy JS boilerplate",
   "main": "index.js",
   "scripts": {
+    "build": "./node_modules/.bin/webpack --colors",
     "test": "./node_modules/.bin/mocha --compilers js:babel-register tests/**/*.spec.js",
     "test:coverage": "nyc npm test",
     "coveralls": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls",
@@ -38,6 +39,8 @@
   },
   "homepage": "https://github.com/dayanyrec/fancy-boilerplate#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
@@ -47,6 +50,7 @@
     "eslint-plugin-import": "^2.7.0",
     "husky": "^0.14.3",
     "mocha": "^3.5.2",
-    "nyc": "^11.2.1"
+    "nyc": "^11.2.1",
+    "webpack": "^3.5.6"
   }
 }
